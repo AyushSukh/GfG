@@ -1,27 +1,27 @@
-<h2><a href="https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/">34. Find First and Last Position of Element in Sorted Array</a></h2><h3>Medium</h3><hr><div><p>Given an array of integers <code>nums</code> sorted in non-decreasing order, find the starting and ending position of a given <code>target</code> value.</p>
+Floor in a Sorted Array
+Difficulty: EasyAccuracy: 33.75%Submissions: 270K+Points: 2
+Given a sorted array arr[] of size n without duplicates, and given a value x. Floor of x is defined as the largest element k in arr[] such that k is smaller than or equal to x. Find the index of k(0-based indexing).
 
-<p>If <code>target</code> is not found in the array, return <code>[-1, -1]</code>.</p>
+Examples
 
-<p>You must&nbsp;write an algorithm with&nbsp;<code>O(log n)</code> runtime complexity.</p>
+Input: n = 7, x = 0 arr[] = {1,2,8,10,11,12,19}
+Output: -1
+Explanation: No element less than 0 is found. So output is "-1".
+Input: n = 7, x = 5 arr[] = {1,2,8,10,11,12,19}
+Output: 1
+Explanation: Largest Number less than 5 is 2 (i.e k = 2), whose index is 1(0-based indexing).
+Your Task:
+The task is to complete the function findFloor() which returns an integer denoting the index value of K or return -1 if there isn't any such number.
 
-<p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p>
-<pre><strong>Input:</strong> nums = [5,7,7,8,8,10], target = 8
-<strong>Output:</strong> [3,4]
-</pre><p><strong class="example">Example 2:</strong></p>
-<pre><strong>Input:</strong> nums = [5,7,7,8,8,10], target = 6
-<strong>Output:</strong> [-1,-1]
-</pre><p><strong class="example">Example 3:</strong></p>
-<pre><strong>Input:</strong> nums = [], target = 0
-<strong>Output:</strong> [-1,-1]
-</pre>
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
+Expected Time Complexity: O(log N).
+Expected Auxiliary Space: O(1).
 
-<ul>
-	<li><code>0 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
-	<li><code>-10<sup>9</sup>&nbsp;&lt;= nums[i]&nbsp;&lt;= 10<sup>9</sup></code></li>
-	<li><code>nums</code> is a non-decreasing array.</li>
-	<li><code>-10<sup>9</sup>&nbsp;&lt;= target&nbsp;&lt;= 10<sup>9</sup></code></li>
-</ul>
-</div>
+Constraints:
+1 ≤ n ≤ 107
+1 ≤ arr[i] ≤ 1018
+0 ≤ x ≤ arr[n-1]
+
+Company Tags
+Amazon
+Topic Tags
+SearchingSortingAlgorithms
